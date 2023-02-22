@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.progress-container {
+  margin-left: 3rem;
+}
+
+.time-container {
+  margin-right: 3rem;
+}
+
+.progress-container h1 {
+  margin-bottom: 0;
+  font-size: clamp(1.5em, 2vw + 1em, 3em);
+  color: #ed50f1;
+}
+
+.progressText {
+  margin-top: 0;
+  padding: 0;
+}
+
+.countdown-timer {
+  font-size: clamp(1.5em, 2vw + 1em, 3em);
+  color: #ed50f1;
+}
+
+.question-container {
+  background-color: #fdb9fc;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.question-text {
+  font-size: clamp(0.75em, 2vw + 0.5em, 1.5em);
+  font-weight: 800;
+}
+
+.question-text h1 {
+  margin-bottom: 0;
+  color: #ffeded;
+}
+
+.answer-label {
+  background-color: #ed50f1;
+  max-width: 60ch;
+
+  cursor: pointer;
+  font-size: clamp(0.5em, 2vw + 0.5em, 1.5em);
+  font-weight: 600;
+  color: #ffeded;
+  display: block;
+  overflow-wrap: break-word;
+}
+
+input[type="radio"] {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #ffeded;
+  color: #ed50f1;
+}
+
+#submit,
+#reload {
+  background-color: #ed50f1;
+  border: none;
+  font-size: 1em;
+  font-size: clamp(0.75em, 2vw + 0.5em, 1.5em);
+  font-weight: 600;
+  color: #ffeded;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#submit:hover,
+#reload:hover {
+  background-color: #ffeded;
+  color: #ed50f1;
+}
+
+.total-score {
+  font-size: clamp(1em, 2vw + 0.5em, 2em);
+  font-weight: 800;
+  color: #ed50f1;
+}
+
+@media (max-width: 280px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .question-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

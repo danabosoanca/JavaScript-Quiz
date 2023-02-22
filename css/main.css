@@ -1,0 +1,39 @@
+body {
+  background-color: #ffeded;
+  font-family: "Playfair Display";
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 89vh;
+}
+
+.home > h1 {
+  font-size: clamp(2.5em, 2vw + 2em, 5em);
+  font-weight: 900;
+}
+
+.play-btn {
+  background-color: #ed50f1;
+  border: none;
+  font-size: clamp(1em, 2vw + 1em, 2em);
+  font-weight: 600;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.play-btn:hover {
+  background-color: #ff00e4;
+}
